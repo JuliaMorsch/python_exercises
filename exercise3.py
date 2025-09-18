@@ -19,3 +19,7 @@ media_avg = round_avg(media)
 # Check the students' situation
 
 situation = "Aprovado" if media_avg >= 7 else "Reprovado"
+
+print(f"As notas do aluno são {grades}")
+print(f"A média do aluno é {media_avg}")
+print(f"A situação do aluno é {situation}")
