@@ -13,4 +13,6 @@ not_rsvp = [guests for guests in guest_list if guests not in confirmated]
 print("Convidados que ainda não confirmaram: ")
 for guest in not_rsvp:
     print(guest)
-    
+
+# Invite reminder for guests who didn't RSVP
+print("\nEnviando lembretes para os convidados que ainda não confirmaram")
