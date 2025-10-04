@@ -25,3 +25,11 @@ participants = [
 
 # identifying different regions of the 
 regions = set(participant['localizacao'] for participant in participants)
+
+# categorizing affiliations
+affiliations = {}
+for participant in participants:
+    affil = participant['afiliacao']
+    if affil not in affiliations:
+        affiliations[affil] = []
+    affiliations[affil].append(participant['nome'])
