@@ -17,8 +17,11 @@ participants = [
     }
     {
         'nome': "Agatha",
-        'localizacao':"Brasil"
-        'afiliacao': "UFSC",
+        'localizacao':"Argentina"
+        'afiliacao': "Instituto C",
         'interesses': ['Geografia', 'Engenharia']
     }
 ]
+
+# identifying different regions of the 
+regions = set(participant['localizacao'] for participant in participants)
